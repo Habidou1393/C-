@@ -1,0 +1,25 @@
+#include <iostream>
+#include <tchar.h>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    while (true)
+    {
+    float resultat;
+    float valeur1,valeur2;
+    char operateur;
+    
+    cout << " Un caclul : ";
+    cin >> valeur1;
+    cout << "";
+    cin >> valeur2;
+    resultat=valeur1+valeur2;
+    if(operateur == '+');
+    if(operateur == '-');
+    if(operateur == '*');
+    cout <<" Resulat : " << resultat << endl;
+    }
+    return 0;
+}
