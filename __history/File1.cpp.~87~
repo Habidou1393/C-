@@ -6,7 +6,6 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
         {while(true)
-
         	{
             float valeur1,valeur2;
         	char operateur;
@@ -33,12 +32,14 @@ int _tmain(int argc, _TCHAR* argv[])
             }
 
 
-            cout << "Resultat : " << resultat <<endl;
+            cout << "Resultat" << resultat <<endl;
             ofstream FichierLog;
 			FichierLog.open("journal.log");
     		FichierLog << resultat << endl;
     		FichierLog.close();
         	}
+
+
 
 	}
 	return 0;

@@ -1,0 +1,46 @@
+#include <iostream>
+#include <tchar.h>
+#include <fstream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    while (true)
+    {
+    	{float resultat;
+    	float valeur1,valeur2;
+    	char operateur;
+
+    cout << " Un caclul : ";
+    std::cin >> valeur1 >> operateur >> valeur2;
+
+    	else if(operateur == '+'); {
+    	resultat=valeur1+valeur2;
+        }
+
+    	else if(operateur == '-');{
+    	resultat=valeur1-valeur2;
+        }
+
+        else if(operateur == '*');{
+    	resultat=valeur1*valeur2;
+        }
+
+        else {
+            cout <<"erreur" << endl;
+        }
+        	cout <<" Resulat : " << resultat << endl;
+    	}
+    }
+
+        ofstream FichierLog;
+        FichierLog.open("journal.log");
+        FichierLog << resultat << endl;
+        FichierLog.close();
+
+
+
+    std::cout << "FIN DU PROGRAMME CALCULATRICE SANS ERREUR" << std::endl;
+    return 0;
+}

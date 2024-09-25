@@ -1,44 +1,43 @@
 #include <iostream>
 #include <tchar.h>
-#include <fstream>
 
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
         {while(true)
-
         	{
             float valeur1,valeur2;
         	char operateur;
-            float resultat;
+            float result;
             cout << "calcul :";
             std::cin >> valeur1 >> operateur >> valeur2;
 
             if (operateur=='+') {
-            resultat = valeur1 + valeur2;
+            result = valeur1 + valeur2;
             }
             else
             if (operateur=='*') {
-            resultat = valeur1 * valeur2;
+            result = valeur1 * valeur2;
             }
             else
             if (operateur=='-') {
-            resultat = valeur1 - valeur2;
+            result = valeur1 - valeur2;
             }
             else
             if (operateur=='/') {
-            resultat = valeur1 / valeur2;
+            result = valeur1 / valeur2;
             }
             else { cout<<"erreur"<<endl;
             }
 
 
-            cout << "Resultat : " << resultat <<endl;
-            ofstream FichierLog;
-			FichierLog.open("journal.log");
-    		FichierLog << resultat << endl;
-    		FichierLog.close();
-        	}
+            cout << "Resultat" << result<<endl;
+        }
+
+	ofstream FichierLog;
+	FichierLog.open("journal.log");
+    FichierLog << result << endl;
+    fichierLog.close();
 
 	}
 	return 0;

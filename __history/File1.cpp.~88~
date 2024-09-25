@@ -6,7 +6,6 @@ using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
         {while(true)
-
         	{
             float valeur1,valeur2;
         	char operateur;
@@ -39,6 +38,8 @@ int _tmain(int argc, _TCHAR* argv[])
     		FichierLog << resultat << endl;
     		FichierLog.close();
         	}
+
+
 
 	}
 	return 0;

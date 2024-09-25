@@ -13,16 +13,20 @@ int _tmain(int argc, _TCHAR* argv[])
     
     cout << " Un caclul : ";
     std::cin >> valeur1 >> operateur >> valeur2;
-    if(operateur == '+');{
-    	resultat=valeur1+valeur2;	
-    }
-    if(operateur == '-');{
+
+    	if(operateur == '+'); {
+    	resultat=valeur1+valeur2;
+        }
+
+    	if(operateur == '-');{
     	resultat=valeur1-valeur2;
-    }
-    if(operateur == '*');
+        }
+
+    	if(operateur == '*');{
     	resultat=valeur1*valeur2;
-    	
-    cout <<" Resulat : " << resultat << endl;
-    }
+        }
+    	cout <<" Resulat : " << resultat << endl;
+    	}
+    std::cout << "FIN DU PROGRAMME CALCULATRICE SANS ERREUR" << std::endl;
     return 0;
 }
